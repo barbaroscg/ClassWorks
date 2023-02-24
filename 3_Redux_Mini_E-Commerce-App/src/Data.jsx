@@ -1,0 +1,88 @@
+const datas = [
+  {
+    id: 0,
+    title: 'Xiaomi Watch S1',
+    price: 3000,
+    desc: 'Şık kalın, formda kalın. İster önemli bir müşteri toplantısı ister resmi kıyafetli bir parti olsun, Xiaomi Watch S1 ile şık görüneceğinizden emin olabilirsiniz. ',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1648800526.63079338.png',
+  },
+  {
+    id: 1,
+    title: 'Mi Smart Air Fryer 3.5L',
+    price: 2500,
+    desc: 'Daha az yağ ve kalori ile daha sağlıklı yemekler. Yağsız kızartma丨Pişirme丨Yoğurt丨Kurutulmuş meyve丨Buz çözme',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1630468223.33017595.png',
+  },
+  {
+    id: 2,
+    title: 'Mi Smart Band 5',
+    price: 590,
+    desc: 'Akıllı cihazınızla daha fazlasını yaşayın. Yaklaşık %20 daha geniş ekran alanı, gelen arama, mesaj ve uyarıların daha kolay görülebilmesini sağlar ve dinamik kadranlarda yeni bir çağa öncülük eder. ',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1620459833.77555593.png',
+  },
+  {
+    id: 3,
+    title: 'Redmi Buds 3',
+    price: 700,
+    desc: 'Hafif, yarı kulak içi kulaklıklar | Yüksek çözünürlüklü ses kalitesi | Aramalar için çift mikrofonlu gürültü engelleme | 20 saatlik ekstra uzun pil ömrü ',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1640695900.08079520.png',
+  },
+  {
+    id: 4,
+    title: 'Redmi Note 11',
+    price: 5499,
+    desc: 'Snapdragon® 68090 Hz AMOLED DotDisplay 33 W Pro hızlı şarj ',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1652151489.36648394.png',
+  },
+  {
+    id: 5,
+    title: 'Redmi Note 11S',
+    price: 6800,
+    desc: '108 MP profesyonel sınıf ana kamera90 Hz FHD+ AMOLED DotDisplay 33 W Pro hızlı şarj ',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1649354365.95372117.png',
+  },
+  {
+    id: 6,
+    title: 'Redmi Note 11 Pro',
+    price: 10500,
+    desc: '108 MP profesyonel sınıf ana kamera 120 Hz FHD+ AMOLED DotDisplay 67 W turbo şarj ',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1649658045.92458168.png',
+  },
+  {
+    id: 7,
+    title: 'POCO F4 GT',
+    price: 18500,
+    desc: 'Sınıfında lider 1. Nesil 4 nm Snapdragon® 8 Akıllı 120 W HyperCharge 120 Hz düz AMOLED ekran',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1652857990.54727767.png',
+  },
+  {
+    id: 8,
+    title: 'POCO X4 Pro 5G',
+    price: 10400,
+    desc: 'POCO X Serisi, artık bir AMOLED ekrana sahiptir ve DCI-P3ü destekler. Genişletilmiş renk aralığı, ürettiği zengin ayrıntılarla sinematik bir görünüm ve his sunar. Ön kamera diyaframının yalnızca 2,96 mmlik açıklığı, görüş alanınızı genişletir.',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646052504.41941404.png',
+  },
+  {
+    id: 9,
+    title: 'Xiaomi 12 Pro',
+    price: 25000,
+    desc: 'İsteklerinizi hayata geçirmek için sürekli mükemmelliği arayışımızdan yola çıkarak geliştirilen Xiaomi 12 Pronun profesyonel düzeyde 50 MP üçlü kamera dizisi, WQHD+ dinamik 120 Hz ekranı, şimdiye kadarki en gelişmiş Snapdragon® 8 1. Nesil yonga seti ve akıllı 120 W Xiaomi HyperCharge özelliğiyle her sahnede ustalaşın.',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1652150683.7537938.png',
+  },
+  {
+    id: 10,
+    title: 'Redmi 9C',
+    price: 2900,
+    desc: 'Canlı renklerde favori anlarınızı yakalayarak Al üçlü kamera ile anılarınızı kalıcı hale getirin.',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1639554816.99134341.png',
+  },
+  {
+    id: 11,
+    title: 'Mi Robot Vacuum-Mop',
+    price: 6000,
+    desc: 'Dinamik görsel navigasyon / Ultra güçlü 2500 Pa-lık emiş* / Yüksek kapasiteli 600 ml toz kutusu* / Akıllı kontrollü su deposu ',
+    img: 'https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1630434533.15253221.png',
+  },
+];
+
+export default datas;
